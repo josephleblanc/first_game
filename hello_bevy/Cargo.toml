@@ -1,0 +1,17 @@
+[package]
+name = "hello_bevy"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+# Rust Nightly Compiler: Gives access to the latest performace improvements
+# and "unstable" optimizations
+# [toolchain]
+# channel = "nightly"
+
+[dependencies]
+# Bevy's Dynamic Linking Feature
+# This will result in fast iterative compiles
+# Doesn't work on windows
+# !!! Remove before reversing this game!
+bevy = { version = "0.8.0", features = ["dynamic"] }
